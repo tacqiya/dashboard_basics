@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* DROPZONE */
+/* DROPZONE DARK */
+/* Table Team */
 * {
   margin: 0;
   padding: 0;
@@ -135,7 +138,7 @@ body {
   flex-direction: column;
   max-width: 36rem;
   width: 100%;
-  background-color: var(#fff);
+  background-color: #fff;
 }
 .dropzone-box h2 {
   font-size: 2rem;
@@ -151,9 +154,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 2px dashed var(#111926);
+  border: 2px dashed #111926;
   border-radius: 1rem;
-  color: var(#111926);
+  color: #111926;
   cursor: pointer;
 }
 .dropzone-box .dropzone-area [type=file] {
@@ -169,18 +172,18 @@ body {
   height: 5rem;
   width: 5rem;
   margin-bottom: 0.5rem;
-  stroke: var(#111926);
+  stroke: #111926;
 }
 .dropzone-box .dropzone--over {
   border-style: solid;
-  background-color: var(#F8F8FF);
+  background-color: #F8F8FF;
 }
 .dropzone-box .dropzone-actions {
   display: flex;
   justify-content: space-between;
   padding-top: 1.5rem;
   margin-top: 1.5rem;
-  border-top: 1px solid var(--gray);
+  border-top: 1px solid #D3D3D3;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -194,46 +197,29 @@ body {
 }
 .dropzone-box .dropzone-actions button[type=reset] {
   background-color: transparent;
-  border: 1px solid var(--gray);
+  border: 1px solid #D3D3D3;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  color: var(#111926);
+  color: #111926;
   cursor: pointer;
 }
 .dropzone-box .dropzone-actions button[type=submit] {
-  background-color: var(#111926);
-  border: 1px solid var(#111926);
+  background-color: #111926;
+  border: 1px solid #111926;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  color: var(#fff);
+  color: #fff;
   cursor: pointer;
 }
 
 /*DROPZONE END*/
 /*DROPZONE 2*/
-:root {
-  --primary: #8800ff;
-  --primary-hover: #6c00ca;
-  --bg: #111315;
-  --secondary: #262626;
-  --secondary-hover: #383838;
-  --dropzone-bg: #1A1C1E;
-  --gray: #D3D3D3;
-  --border: #333333;
-  --dropzone-border: #FFF;
-  --headline: #FFF;
-  --text: #FFF;
-  --primary-text: #F2F7FE;
-  --dropzone-over: var(--secondary);
-}
-
 *::-moz-selection {
-  background: var(--primary);
+  background: #8800ff;
   color: var(--btn-text);
 }
-
 *::selection {
-  background: var(--primary);
+  background: #8800ff;
   color: var(--btn-text);
 }
 
@@ -244,18 +230,18 @@ body {
   justify-content: center;
   flex-direction: column;
   max-width: 36rem;
-  border: 1px solid var(--border);
+  border: 1px solid #333333;
   width: 100%;
-  background: var(--dropzone-bg);
+  background: #1A1C1E;
 }
 .dropzone-box-dark h2 {
   font-size: 1.4rem;
   margin-bottom: 0.6rem;
-  color: var(--headline);
+  color: #FFF;
 }
 .dropzone-box-dark p {
   font-size: 1.15rem;
-  color: var(--gray);
+  color: #D3D3D3;
 }
 .dropzone-box-dark .dropzone-area-dark {
   padding: 1rem;
@@ -267,7 +253,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 2px dashed var(--dropzone-border);
+  border: 2px dashed #FFF;
   border-radius: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -289,14 +275,14 @@ body {
   max-width: 6rem;
   width: 100%;
   margin-bottom: 0.5rem;
-  stroke: var(--headline);
+  stroke: #FFF;
 }
 .dropzone-box-dark .dropzone-area-dark:hover {
-  background: var(--dropzone-over);
+  background: var(#262626);
 }
 .dropzone-box-dark .dropzone--over {
-  border: 2px solid var(--primary);
-  background: var(--dropzone-over);
+  border: 2px solid #8800ff;
+  background: var(#262626);
 }
 .dropzone-box-dark .dropzone-actions {
   display: flex;
@@ -315,24 +301,187 @@ body {
 .dropzone-box-dark .dropzone-actions button[type=reset] {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  color: var(--text);
-  background: var(--secondary);
+  color: #FFF;
+  background: #262626;
   cursor: pointer;
-  border: 1px solid var(--border);
+  border: 1px solid #333333;
 }
 .dropzone-box-dark .dropzone-actions button[type=reset]:hover {
-  background: var(--secondary-hover);
+  background: #383838;
 }
 .dropzone-box-dark .dropzone-actions button[type=submit] {
-  background: var(--primary);
+  background: #8800ff;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  color: var(--primary-text);
+  color: #F2F7FE;
   border: none;
   cursor: pointer;
 }
 .dropzone-box-dark .dropzone-actions button[type=submit]:hover {
-  background: var(--primary-hover);
+  background: #6c00ca;
 }
 
-/*DROPZONE 2 END*//*# sourceMappingURL=style.css.map */
+/*DROPZONE 2 END*/
+/* TABLE Team */
+.table-widget {
+  border-radius: 1rem;
+  background: #FFFFFF;
+  padding: 1.5rem;
+  border: 2px solid #EDEEF1;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  text-align: left;
+  overflow-x: auto;
+}
+.table-widget table {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-collapse: collapse;
+}
+.table-widget caption {
+  font-size: 1.12rem;
+  font-weight: 700;
+  text-align: left;
+  margin: 0.5rem 0px;
+}
+.table-widget th {
+  padding: 1.25rem 1rem;
+  font-size: 0.875rem;
+  color: #A0A7B1;
+}
+.table-widget thead {
+  border-top: 2px solid #EDEEF1;
+}
+.table-widget tfoot {
+  margin-top: 1rem;
+  border-top: 2px solid #EDEEF1;
+}
+.table-widget td {
+  padding: 0.5rem 1rem;
+  vertical-align: middle;
+}
+.table-widget tbody tr {
+  cursor: pointer;
+}
+.table-widget tbody tr:nth-child(odd) {
+  background: #f6f9ff;
+}
+.table-widget tbody tr:hover {
+  background: #e2ecff;
+}
+
+.table-row-count {
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: #F1F2F6;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+}
+
+.team-member-profile {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.team-member-profile img {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.profile-info__name {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.status {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+.status--active {
+  background: #EAFEF3;
+  color: #2ECC71;
+}
+
+.status--inactive {
+  background: #fff6e5;
+  color: #F4BD50;
+}
+
+.status--offline {
+  background: #F1F2F6;
+  color: #A0A7B1;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.5rem;
+  background: #F1F2F6;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+.tag::first-letter {
+  text-transform: uppercase;
+}
+
+.tag--design {
+  background: #f4efff;
+  color: #9A84DA;
+}
+
+.tag--QA {
+  color: #DF8FA8;
+  background: #fbdde7;
+}
+
+.tag--dev {
+  background: #eaf2ff;
+  color: #739FDC;
+}
+
+.tag--marketing {
+  background: #fff6e5;
+  color: #F4BD50;
+}
+
+.table-widget {
+  min-height: 5rem;
+}
+
+.pagination {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+.pagination a {
+  display: block;
+  color: #101824;
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+.pagination a:hover, .pagination a.active {
+  background: #f6f9ff;
+  text-decoration: underline;
+}
+
+/* TABLE 1 END *//*# sourceMappingURL=style.css.map */

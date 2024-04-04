@@ -145,7 +145,7 @@ body {
     flex-direction: column;
     max-width: 36rem;
     width: 100%;
-    background-color: var($dropzonewhite);
+    background-color: $dropzonewhite;
     h2 {
         font-size: 2rem;
         margin-bottom: 0.5rem;
@@ -160,9 +160,9 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border: 2px dashed var($dropzoneprimary);
+        border: 2px dashed $dropzoneprimary;
         border-radius: 1rem;
-        color: var($dropzoneprimary);
+        color: $dropzoneprimary;
         cursor: pointer;
         [type="file"] {
             cursor: pointer;
@@ -178,20 +178,20 @@ body {
                 height: 5rem;
                 width: 5rem;
                 margin-bottom: 0.5rem;
-                stroke: var($dropzoneprimary);
+                stroke: $dropzoneprimary;
             }
         }
     }
     .dropzone--over {
         border-style: solid;
-        background-color: var($dropzonebackground);
+        background-color: $dropzonebackground;
     }
     .dropzone-actions {
         display: flex;
         justify-content: space-between;
         padding-top: 1.5rem;
         margin-top: 1.5rem;
-        border-top: 1px solid var(--gray);
+        border-top: 1px solid $dropzonegray;
         gap: 1rem;
         flex-wrap: wrap;
         button {
@@ -204,18 +204,18 @@ body {
         }
         button[type='reset'] {
             background-color: transparent;
-            border: 1px solid var(--gray);
+            border: 1px solid $dropzonegray;
             border-radius: 0.5rem;
             padding: 0.5rem 1rem;
-            color: var($dropzoneprimary);
+            color: $dropzoneprimary;
             cursor: pointer;
         }
         button[type='submit'] {
-            background-color: var($dropzoneprimary);
-            border: 1px solid var($dropzoneprimary);
+            background-color: $dropzoneprimary;
+            border: 1px solid $dropzoneprimary;
             border-radius: 0.5rem;
             padding: 0.5rem 1rem;
-            color: var($dropzonewhite);
+            color: $dropzonewhite;
             cursor: pointer;
         }
     }
@@ -227,24 +227,8 @@ body {
 
 /*DROPZONE 2*/
 
-:root {
-    --primary: #8800ff;
-    --primary-hover: #6c00ca;
-    --bg: #111315;
-    --secondary: #262626;
-    --secondary-hover: #383838;
-    --dropzone-bg: #1A1C1E;
-    --gray: #D3D3D3;
-    --border: #333333;
-    --dropzone-border: #FFF;
-    --headline: #FFF;
-    --text: #FFF;
-    --primary-text: #F2F7FE;
-    --dropzone-over: var(--secondary);
-}
-
 *::selection {
-    background: var(--primary);
+    background: $dropzonedarkprimary;
     color: var(--btn-text);
 }
 
@@ -255,17 +239,17 @@ body {
     justify-content: center;
     flex-direction: column;
     max-width: 36rem;
-    border: 1px solid var(--border);
+    border: 1px solid $dropzonedarkborder;
     width: 100%;
-    background: var(--dropzone-bg);
+    background: $dropzonedarkdropzone-bg;
     h2 {
         font-size: 1.4rem;
         margin-bottom: 0.6rem;
-        color: var(--headline);
+        color: $dropzonedarkheadline;
     }
     p {
         font-size: 1.15rem;
-        color: var(--gray);
+        color: $dropzonedarkgray;
     }
     .dropzone-area-dark {
         padding: 1rem;
@@ -277,7 +261,7 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border: 2px dashed var(--dropzone-border);
+        border: 2px dashed $dropzonedarkdropzone-border;
         border-radius: 1rem;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -299,16 +283,16 @@ body {
                 max-width: 6rem;
                 width: 100%;
                 margin-bottom: 0.5rem;
-                stroke: var(--headline);
+                stroke: $dropzonedarkheadline;
             }
         }
         &:hover {
-            background: var(--dropzone-over);
+            background: $dropzonedarkdropzone-over;
         }
     }
     .dropzone--over {
-        border: 2px solid var(--primary);
-        background: var(--dropzone-over);
+        border: 2px solid $dropzonedarkprimary;
+        background: $dropzonedarkdropzone-over;
     }
     .dropzone-actions {
         display: flex;
@@ -326,27 +310,195 @@ body {
         button[type='reset'] {
             border-radius: 0.5rem;
             padding: 0.5rem 1rem;
-            color: var(--text);
-            background: var(--secondary);
+            color: $dropzonedarktext;
+            background: $dropzonedarksecondary;
             cursor: pointer;
-            border: 1px solid var(--border);
+            border: 1px solid $dropzonedarkborder;
         }
         button[type='reset']:hover {
-            background: var(--secondary-hover);
+            background: $dropzonedarksecondary-hover;
         }
         button[type='submit'] {
-            background: var(--primary);
+            background: $dropzonedarkprimary;
             border-radius: 0.5rem;
             padding: 0.5rem 1rem;
-            color: var(--primary-text);
+            color: $dropzonedarkprimary-text;
             border: none;
             cursor: pointer;
         }
         button[type='submit']:hover {
-            background: var(--primary-hover);
+            background: $dropzonedarkprimary-hover;
         }
     }
 }
 
 
 /*DROPZONE 2 END*/
+
+
+/* TABLE Team */
+
+.table-widget {
+    border-radius: 1rem;
+    background: $tbteamtable-background;
+    padding: 1.5rem;
+    border: 2px solid $tbteamgray-background;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    text-align: left;
+    overflow-x: auto;
+    table {
+        max-width: fit-content;
+        border-collapse: collapse;
+    }
+    caption {
+        font-size: 1.12rem;
+        font-weight: 700;
+        text-align: left;
+        margin: 0.5rem 0px;
+    }
+    th {
+        padding: 1.25rem 1rem;
+        font-size: 0.875rem;
+        color: $tbteamgray;
+    }
+    thead {
+        border-top: 2px solid $tbteamgray-background;
+    }
+    tfoot {
+        margin-top: 1rem;
+        border-top: 2px solid $tbteamgray-background;
+    }
+    td {
+        padding: 0.5rem 1rem;
+        vertical-align: middle;
+    }
+    tbody {
+        tr {
+            cursor: pointer;
+            &:nth-child(odd) {
+                background: $tbteamodd-row;
+            }
+            &:hover {
+                background: #e2ecff;
+            }
+        }
+    }
+}
+
+.table-row-count {
+    font-size: 0.8rem;
+    font-weight: 700;
+    background: $tbteamgray-mid;
+    padding: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+}
+
+.team-member-profile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    img {
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.profile-info__name {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.status {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-weight: 700;
+}
+
+.status--active {
+    background: #EAFEF3;
+    color: #2ECC71;
+}
+
+.status--inactive {
+    background: #fff6e5;
+    color: #F4BD50;
+}
+
+.status--offline {
+    background: $tbteamgray-mid;
+    color: $tbteamgray;
+}
+
+.tags {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.5rem;
+    background: $tbteamgray-mid;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+.tag--design {
+    background: #f4efff;
+    color: #9A84DA;
+}
+
+.tag--QA {
+    color: #DF8FA8;
+    background: #fbdde7;
+}
+
+.tag--dev {
+    background: #eaf2ff;
+    color: #739FDC;
+}
+
+.tag--marketing {
+    background: #fff6e5;
+    color: #F4BD50;
+}
+
+.table-widget {
+    min-height: 5rem;
+}
+
+.pagination {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    a {
+        display: block;
+        color: $tbteamprimary;
+        font-size: 1.3rem;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        &:hover,
+        &.active {
+            background: $tbteamodd-row;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+/* TABLE 1 END */

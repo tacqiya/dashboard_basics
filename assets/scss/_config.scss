@@ -1,5 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* DROPZONE */
+
 $dropzoneprimary: #111926;
 $dropzonewhite: #fff;
 $dropzonebackground: #F8F8FF;
 $dropzonegray: #D3D3D3;
+
+/* DROPZONE DARK */
+
+$dropzonedarkprimary: #8800ff;
+$dropzonedarkprimary-hover: #6c00ca;
+$dropzonedarksecondary: #262626;
+$dropzonedarksecondary-hover: #383838;
+$dropzonedarkdropzone-bg: #1A1C1E;
+$dropzonedarkgray: #D3D3D3;
+$dropzonedarkborder: #333333;
+$dropzonedarkdropzone-border: #FFF;
+$dropzonedarkheadline: #FFF;
+$dropzonedarktext: #FFF;
+$dropzonedarkprimary-text: #F2F7FE;
+$dropzonedarkdropzone-over: var($dropzonedarksecondary);
+
+/* Table Team */
+
+$tbteambackground: #EBECF0;
+$tbteamtable-background: #FFFFFF;
+$tbteamprimary: #101824;
+$tbteamgray: #A0A7B1;
+$tbteamodd-row: #f6f9ff;
+$tbteamgray-background: #EDEEF1;
+$tbteamgray-mid: #F1F2F6;
