@@ -1,0 +1,109 @@
+$dropzoneprimary: #111926;
+$dropzonewhite: #fff;
+$dropzonebackground: #F8F8FF;
+$dropzonegray: #D3D3D3;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/*DROPZONE*/
+
+.dropzone-box {
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 36rem;
+    width: 100%;
+    background-color: $dropzonewhite;
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .dropzone-area {
+        padding: 1rem;
+        position: relative;
+        margin-top: 1rem;
+        min-height: 16rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 2px dashed $dropzoneprimary;
+        border-radius: 1rem;
+        color: $dropzoneprimary;
+        cursor: pointer;
+        [type="file"] {
+            cursor: pointer;
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .file-upload-icon {
+            svg {
+                height: 5rem;
+                width: 5rem;
+                margin-bottom: 0.5rem;
+                stroke: $dropzoneprimary;
+            }
+        }
+    }
+    .dropzone--over {
+        border-style: solid;
+        background-color: $dropzonebackground;
+    }
+    .dropzone-actions {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+        border-top: 1px solid $dropzonegray;
+        gap: 1rem;
+        flex-wrap: wrap;
+        button {
+            flex-grow: 1;
+            min-height: 3rem;
+            font-size: 1.2rem;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        button[type='reset'] {
+            background-color: transparent;
+            border: 1px solid $dropzonegray;
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+            color: $dropzoneprimary;
+            cursor: pointer;
+        }
+        button[type='submit'] {
+            background-color: $dropzoneprimary;
+            border: 1px solid $dropzoneprimary;
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+            color: $dropzonewhite;
+            cursor: pointer;
+        }
+    }
+}
+
+
+/*DROPZONE END*/

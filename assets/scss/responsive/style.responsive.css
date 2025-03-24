@@ -3,20 +3,6 @@
 /* DROPZONE DARK */
 /* Table Team */
 /*CSS Card*/
-@media (max-width: 480px) {
-  .css-card .custom-card {
-    width: 230px;
-    border-radius: 15px;
-  }
-  .css-card .custom-card .img-box {
-    width: 185px;
-    border-radius: 10px;
-  }
-  .css-card .custom-card .card-content p {
-    font-size: 0.8rem;
-  }
-  .css-card .custom-card .card-content a {
-    font-size: 0.9rem;
-  }
-}
-/*CSS Card END*//*# sourceMappingURL=style.responsive.css.map */
+/*CSS Card END*/
+
+/*# sourceMappingURL=style.responsive.css.map */
